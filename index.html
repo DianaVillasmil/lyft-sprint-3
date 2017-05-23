@@ -4,45 +4,92 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
- 	<header>
- 		<a href="#" id="logo-link">
- 			<img src="assets/img/logo-white.png">
- 		</a>		
- 		<ul id="nav-menu">
- 			<li id="nav-menu-drive">
- 				<a href="#">Drive</a>
- 			</li>
- 			<li id="nav-menu-explore">
- 				<a href="#">Explore</a>
- 			</li>
- 			<li id="nav-menu-help">
- 				<a href="#">Help</a>
- 			</li>
- 		</ul>
- 	</header>
- 	<div id="boxleft">
- 		<h2>TURN MILES INTO MONEY</h2>
- 		<br/>
- 		<h5>SIGN UP TO DRIVE LYFT</h5>
- 		<br/>
-		<br/>
- 		<div class="group" id="phone">
- 			<input type="" required>
- 			<span class="highlight"></span>
- 			<span class="bar"></span>
- 			<label>Phone Number</label>
- 		</div>
- 		<button id="become">BECOME A DRIVER<span class="heart"></span></button>
- 		<br/>
- 		<br/>
- 		<br/>
- 		<p>Already applied? Check the status of your application here.</p>
- 		<br/>
- 		<p>Earn money for inviting friends to drive. Learn more.</p>
+	<script src="https://use.fontawesome.com/aae0081e17.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" id="logo-link">
+				<img src="assets/img/logo-white.png">
+			</a>		
+			<ul id="nav-menu">
+				<li id="nav-menu-drive">
+					<a href="#">Drive</a>
+				</li>
+				<li id="nav-menu-explore">
+					<a href="#">Explore</a>
+				</li>
+				<li id="nav-menu-help">
+					<a href="#">Help</a>
+				</li>
+			</ul>
+		</div>
 
- 	</div>
-  	<script src="assets/js/main.js"></script>
-  </body>
-  </html> 
+	</header>
+
+	<div id="boxright">
+
+		<h2>TURN MILES INTO MONEY</h2>
+		<br/>
+		<h5>SIGN UP TO DRIVE LYFT</h5>
+		<br/>
+		<br/>
+
+		<div class="group">
+	      <input type="text" required id="phone">
+	      <span class="highlight"></span>
+	      <span class="bar"></span>
+	      <label>Phone Number</label>
+	    </div>
+		<button id="become">BECOME A DRIVER <span class="heart"></span></button>
+		<br/>
+		<br/>
+		<br/>
+		<p>Already applied? Check the status of your application here.</p>
+		<br/>
+		<p>Earn money for inviting friends to drive. Learn more.</p>
+
+	</div>
+
+	<div id="contenido">
+		<h1>PLAY WITH LYFT</h1>
+		<div class="container">
+			<div id="formulario">
+				<table>
+					<tr>
+						<td>
+							<i class="fa fa-car" aria-hidden="true"></i>
+						</td>
+						<td>
+							<div class="group">
+						      <input type="text" required id="x-coord">
+						      <span class="highlight"></span>
+						      <span class="bar"></span>
+						      <label>X coordinate</label>
+						    </div>
+						</td>
+						<td>
+							<i class="fa fa-car" aria-hidden="true"></i>
+						</td>
+						<td>
+							<div class="group">
+						      <input type="text" required id="y-coord">
+						      <span class="highlight"></span>
+						      <span class="bar"></span>
+						      <label>Y coordinate</label>
+						    </div>
+						</td>
+					</tr>
+				</table>
+				<button id="start">Start!</button>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

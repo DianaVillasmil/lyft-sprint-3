@@ -21,8 +21,7 @@ body, html {
 }
 
 body {
-	overflow-x: hidden;
-	overflow-y: auto;
+	overflow: auto;
 	background-image: url("../img/cropped-Lyft-Promo-Codes-car-1.jpg");
 	background-size: cover;
 	background-position: top;
@@ -34,15 +33,39 @@ header {
 	background-color: #E54E79;
 	position: fixed;
 	height: 80px;
-	width: 100px;
-	padding: 0 100px;
+	width: 100%;
 	box-shadow: 0px 4px 16px 0px rgba(50, 50, 50, 0.75);
+	z-index: 1;
+}
+
+button {
+	padding: 10px 20px;
+	border-style: none;
+	border-width: 0px;
+	border-color: transparent;
+	border-radius: 15px;
+	background-color: #00B2A9;
+	color: white;
+	cursor: pointer;
+	cursor: hand;
+	box-shadow: 0px 2px 16px -2px rgba(50, 50, 50, 0.75);
+}
+
+button:hover {
+	box-shadow: 0px 4px 16px -2px rgba(50, 50, 50, 0.75);
+}
+
+
+.container {
+	height: 100%;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 #logo-link img {
 	height: 100%;
 	padding: 10px;
-	color: #75726C;
 }
 
 #nav-menu {
@@ -56,7 +79,7 @@ header {
 	height: 100%;
 	line-height: 80px;
 	vertical-align: middle;
-	text-align: center; 
+	text-align: center;
 }
 
 #nav-menu li a {
@@ -71,142 +94,190 @@ header {
 	background-color: #E56385;
 }
 
-#boxleft {
+#boxright {
 	background-color: #EDE9E2;
 	padding: 60px 30px;
-	margin: 160px 0;
+	margin: 240px 0 160px;
 	float: right;
 }
 
-#boxleft h2 {
+#boxright h2 {
 	color: #00B2A9;
 	font-weight: bolder;
 }
 
-#boxleft #become:hover {
-	padding: 10px 20px;
-	border-style: none;
-	border-width: 0px;
-	border-color: transparent;
-	border-radius: 15px;
+#boxright h5 {
+	color: #75726C;
+}
+
+#boxright #become {
 	background-color: #E54E79;
-	color: white;
-	cursor: pointer;
-	cursor: hand;
-	box-shadow: 0px 2px 16px -2px rgba(50, 50, 50, 0.75);
 }
 
 .heart::before {
-
-}
-
-#box::before {
 	content: '\2764';
 	font-size: 1.25em;
 	font-weight: bold;
 }
 
+#contenido {
+	display: block;
+	background-color: #00B2A9;
+	width: 100%;
+	clear: both;
+	overflow: auto;
+}
+
+#contenido h1 {
+	background-color: #EDE9E2;
+	margin: 50px 0;
+	color: #75726C;
+	text-align: center;
+}
+
+#formulario {
+	background-color: #EDE9E2;
+	padding: 40px 20px;
+	margin: 30px 0;
+}
+
+#formulario table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#formulario table td i {
+	margin-bottom: 40px;
+}
+
+#start {
+	width: 100%;
+}
+
+#formulario table td.virgen {
+	background-color: #75726C;
+	padding: 20px;
+}
+
+#formulario table td.visitado {
+	background-color: #E54E79;
+	padding: 20px;
+}
+
+#formulario table td.auto {
+	background-color: #E56385;
+	background-image: url('../img/car.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+footer {
+	background-color: #75726C;
+	padding: 30px 0;
+	width: 100%;
+}
+
 /*MATERIAL INPUT*/
- .group 			  { 
-   position:relative; 
-   margin-bottom:45px; 
- }
+.group { 
+  position:relative; 
+  margin-bottom:45px; 
+}
 
- input {
- 	font-size: 18px;
- 	padding: 10px 10px 10px 5px;
- 	display: block;
- 	width: 100%;
- 	border: none;
- 	border-bottom: 1px solid #757575;
- 	background-color: transparent;
- }
+input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+  background-color: transparent;
+}
 
- input:focus {
- 	outline: none;
- }
+input:focus { 
+	outline:none; 
+}
 
- /* LABEL ======================================= */
- label {
-   color:#999; 
-   font-size:18px;
-   font-weight:normal;
-   position:absolute;
-   pointer-events:none;
-   left:5px;
-   top:10px;
-   transition:0.2s ease all; 
-   -moz-transition:0.2s ease all; 
-   -webkit-transition:0.2s ease all;
- }
- 
- /* active state */
- input:focus ~ label, input:valid ~ label {
-   top:-20px;
-   font-size:14px;
-   color:#5264AE;
- }
- 
- /* BOTTOM BARS ================================= */
- .bar { 
- 	position:relative; display:block; width:100%;
- }
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
 
- .bar:before, .bar:after {
-   content:'';
-   height:2px; 
-   width:0;
-   bottom:1px; 
-   position:absolute;
-   background:#5264AE; 
-   transition:0.2s ease all; 
-   -moz-transition:0.2s ease all; 
-   -webkit-transition:0.2s ease all;
- }
+/* active state */
+input:focus ~ label, input:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
 
- .bar:before {
-   left:50%;
- }
+/* BOTTOM BARS ================================= */
+.bar {
+	position:relative; display:block; width:100%; 
+}
 
- .bar:after {
-   right:50%; 
- }
- 
- /* active state */
- input:focus ~ .bar:before, input:focus ~ .bar:after {
-   width:50%;
- }
- 
- /* HIGHLIGHTER ================================== */
- .highlight {
-   position:absolute;
-   height:60%; 
-   width:100px; 
-   top:25%; 
-   left:0;
-   pointer-events:none;
-   opacity:0.5;
- }
- 
- /* active state */
- input:focus ~ .highlight {
-   -webkit-animation:inputHighlighter 0.3s ease;
-   -moz-animation:inputHighlighter 0.3s ease;
-   animation:inputHighlighter 0.3s ease;
- }
- 
- /* ANIMATIONS ================ */
- @-webkit-keyframes inputHighlighter {
- 	from { background:#5264AE; }
-   	to 	{ width:0; background:transparent; }
- }
+.bar:before, .bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
 
- @-moz-keyframes inputHighlighter {
- 	from { background:#5264AE; }
-   	to 	{ width:0; background:transparent; }
- }
+.bar:before {
+  left:50%;
+}
 
- @keyframes inputHighlighter {
- 	from { background:#5264AE; }
-   	to 	{ width:0; background:transparent; }
- } 
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  	to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  	to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  	to 	{ width:0; background:transparent; }
+}
