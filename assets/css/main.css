@@ -6,3 +6,64 @@ Colors:
 #75726C;
 #EDE9E2
 */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-image: url("../img/cropped-Lyft-Promo-Codes-car-1.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+header {
+	background-color: #E54E79;
+	position: fixed;
+	height: 80px;
+	width: 100px;
+	padding: 0 100px;
+}
+
+#logo-link img {
+	height: 100%;
+	padding: 10px;
+}
+
+#nav-menu {
+	float: right;
+	height: 100%;
+}
+
+#nav-menu li {
+	display: inline-block;
+	text-decoration: none;
+	height: 100%;
+	line-height: 80px;
+	vertical-align: middle;
+	text-align: center; 
+}
+
+#nav-menu li a {
+	display: inline-block;
+	height: 100%;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+}
+
+#nav-menu li a:hover {
+	background-color: #E56385;
+}
