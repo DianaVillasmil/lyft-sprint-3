@@ -177,8 +177,35 @@ footer {
 	background-color: #75726C;
 	padding: 30px 0;
 	width: 100%;
+	text-align: right;
 
 }
+
+footer ul {
+
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer img {
+	height: 40px;
+}
+
+footer img.radius {
+	border-radius: .5em;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*MATERIAL INPUT*/
 .group { 
